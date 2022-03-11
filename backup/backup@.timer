@@ -1,0 +1,10 @@
+[Unit]
+Description=Daily backup of %i
+
+[Timer]
+OnCalendar=*-*-* 18:00:00
+RandomizedDelaySec=1h
+Persistent=true
+
+[Install]
+WantedBy=multi-user.target
