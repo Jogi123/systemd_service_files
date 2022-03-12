@@ -1,0 +1,13 @@
+[Unit]
+Description=apt update and apt upgrade service
+After=network.target
+
+[Service]
+Type=simple
+Restart=on-failure
+RestartSec=1
+User=jogi
+ExecStart=/home/jogi/update.sh
+
+[Install]
+WantedBy=multi-user.target
